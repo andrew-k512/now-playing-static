@@ -16,6 +16,7 @@ html {
 body {
   margin: 0;
 
+
   /*
     We need to add some padding to the bottom of the body on mobile so that
      the footer won't get covered by our navigation
@@ -194,4 +195,62 @@ figure {
 
 .about > p {
   margin: 0;
+}
+
+
+@media ( min-width: 768px ) {
+  .site-nav {
+    top: 0;
+    z-index: 100;
+    position: fixed;
+    left: 0;
+    width: 6%;
+    z-index: 100;
+    background-color: #ffffff;
+    text-align: center;
+  }
+  .site-nav-item {
+    width: 20%;
+    height: 60px;
+    padding: 0.75em;
+    font-family: "Montserrat", "Source Code Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1vw;
+    text-align: center;
+    text-transform: uppercase;
+    float: none;
+    padding-left: 10px
+
+
+  }
+  .site-logo {
+    width: 5%;
+    height: 100%;
+    margin: 0;
+    z-index: 200;
+    position: fixed;
+    top: .5vw;
+    left: .5vw;
+  }
+  .site-nav-list:first-child {
+    margin-top: 60px;
+
+  }
+  main {
+    width: 95%;
+    top: 0px;
+    right: 0px;
+
+    float: right;
+  }
+  .movie-overview {
+    display: inherit;
+  }
+  .site-footer {
+      text-align: center;
+      bottom: 0px;
+      width: 100%;
+      right: 0px;
+  }
+
+
 }
